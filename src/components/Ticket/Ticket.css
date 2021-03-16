@@ -1,0 +1,191 @@
+.tickets__ticket {
+    margin-top: 20px;
+}
+
+.ticket {
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.ticket:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ticket__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ticket__carrier {
+    margin-right: 33px;
+}
+
+.ticket__price {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #2196F3;
+}
+
+.ticket__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket__segment:not(:first-child) {
+    margin-top: 10px;
+}
+
+.segment {
+    height: 40px;
+    display: flex;
+}
+
+.segment * {
+    flex-basis: 30.6%;
+}
+
+.segment *:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+.rout {
+    display: flex;
+    flex-direction: column;
+}
+
+.route__points {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #A0B0B9;
+}
+
+.route__time {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+
+    color: #4A4A4A;
+}
+
+.length {
+    display: flex;
+    flex-direction: column;
+}
+
+.length__title {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #A0B0B9;
+}
+
+.length__time {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+
+    color: #4A4A4A;
+}
+
+.stop {
+
+}
+
+.stop__title {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #A0B0B9;
+}
+
+.stop__points {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+
+    color: #4A4A4A;
+}
+
+@media (max-width: 633px) {
+    .ticket {
+        padding: 10px;
+    }
+
+    .ticket__header {
+        margin-bottom: 10px;
+    }
+
+    .ticket__price {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .route__points {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .route__time {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .length__title {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .length__time {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .stop__title {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .stop__points {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 415px) {
+
+}
